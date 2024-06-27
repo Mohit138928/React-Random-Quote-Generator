@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: "Raleway", sans-serif;
+  background: #0059ff;
+  font-weight: 400;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+}
+
+#quote-box {
+  background: #fff;
+  width: 600px;
+  position: relative;
+  padding: 40px 50px;
+  border-radius: 5px;
+  display: table;
+}
+
+#text {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#author {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1rem;
+}
+
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media > a {
+  margin-right: .5rem;
+  background: #0059ff;
+  padding: .7rem .7rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.social-media > a:hover {
+  opacity: .9;
+}
+
+.social-media > a img {
+  width: 1.5rem;
+}
+
+#new-quote {
+  background: #0059ff;
+  border: none;
+  color: #fff;
+  padding: .7rem 1rem;
+  font-size: .9rem;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+#new-quote:hover {
+  opacity: 0.9;
+}
+
+.icons{
+  color: white;
+  display: flex;
+}
+
+.footer {
+  width: 450px;
+  text-align: center;
+  display: block;
+  margin: 15px auto 30px auto;
+  font-size: 0.8em;
+  color: #fff;
+}
+
+.footer a {
+  font-weight: 500;
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.quote{
+  color: #0059ff;
 }
